@@ -18,6 +18,22 @@ Odoo : The ERP system where partner data is stored and managed.
 EPPlus : .NET library used to export data to Excel files (.xlsx).
 Windows Forms : Graphical platform for creating user interfaces in Windows desktop applications.
 
+Project Flow
+Authentication in Odoo : When the application is started, authentication is performed with the Odoo server using XML-RPC. If the authentication is successful, the system returns a UID that allows the following operations to be performed.
+CRUD in the partner list : The user can:
+Create a new partner: Enter the data (name and email) and save the record in Odoo.
+Read Partner List: The partner list is loaded and displayed in a DataGridView .
+Update a partner: Select a partner from the list, modify the data and save it.
+Delete a partner: Select a partner from the list and delete it from the system.
+Export to Excel : The option to export the list of partners to an Excel file is provided. The user can select the location to save the file and the application will automatically open it after the export is complete.
+Conclusion
+This project is an excellent example of how to connect a VB.NET desktop application with an Odoo server using XML-RPC . Through this implementation, we were able to perform CRUD operations on partner data and handle errors appropriately to improve the user experience. Additionally, the Excel export functionality allows the user to easily maintain a copy of the data.
+
+Remember that I have used standard Windows controls. Using controls such as Syncfusion or Devexpress among others, you can do wonders with the data obtained, from reports to highly advanced grids, as well as gateways for communication and automation of applications with other ERPs .
+
+
+www.palentino.es
+
 
 
 
